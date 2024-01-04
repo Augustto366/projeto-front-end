@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pictures/background-img.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.818);
+    padding: 10px;
+    height: 100px;
+}
+
+header > img {
+    display: none;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    list-style: none;
+}
+
+nav > ul > a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+}
+
+main {
+    width: 100vw;
+    height: 86vh;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main > section > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+main > section > div#doisp {
+    display: flex;
+    gap: 10px;
+}
+
+div#doisp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin-top: 7px;
+}
+
+div#doisp > a {
+    text-decoration: none;
+}
+
+div#doisp > #html {
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+}
+
+div#doisp > #css {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px;
+}
