@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > nav#copy {
+        display: flex;
+    }   
+
+    header > nav#copy > ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header > #menu {
+        display: none;
+    }
+
+    main > section > h1 {
+        font-size: 4em;
+    }
+}
