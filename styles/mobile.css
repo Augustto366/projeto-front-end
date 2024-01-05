@@ -16,7 +16,6 @@ body, html {
     height: 100vh;
     background: rgb(67, 66, 66) url(../pictures/background-img.jpg) no-repeat top left; 
     background-size: cover;
-    overflow-y: hidden;
 }
 
 header {
