@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url(../fonts/ChakraPetch-Regular.ttf)
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,19 +14,15 @@
 body, html {
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    background-image: url(../pictures/background-img.jpg);
-    background-position: center center;
+    background: rgb(67, 66, 66) url(../pictures/background-img.jpg) no-repeat top left; 
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    background-color: rgba(0, 0, 0, 0.818);
+    background-color: rgba(0, 0, 0, 0.712);
     padding: 10px;
     height: 100px;
 }
@@ -48,7 +49,7 @@ nav > ul {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Chakra Petch;
     font-size: 1em;
     font-weight: bolder;
     list-style: none;
@@ -69,7 +70,7 @@ nav > ul > a:hover {
 
 main {
     width: 100vw;
-    height: 86vh;
+    height: 500px;
 }
 
 main > section {
@@ -81,9 +82,10 @@ main > section {
 }
 
 main > section > h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-family: Chakra Petch;
+    font-size: 2.1em;
     color: #fff;
+    text-shadow: -2px 2px 8px black;
 }
 
 main > section > div#doisp {
@@ -92,7 +94,7 @@ main > section > div#doisp {
 }
 
 div#doisp {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Chakra Petch;
     font-size: 1.1em;
     margin-top: 7px;
 }
@@ -104,6 +106,7 @@ div#doisp > a {
 div#doisp > #html {
     background-color: #fff;
     color: black;
+    box-shadow: -1px 1px 10px 1px;
     padding: 5px;
 }
 
@@ -116,6 +119,7 @@ div#doisp > #html:hover {
 div#doisp > #css {
     border: 2px solid #fff;
     color: #fff;
+    box-shadow: -1px 1px 10px 1px;
     padding: 5px;
 }
 
