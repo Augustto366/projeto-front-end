@@ -9,6 +9,7 @@
 body, html {
     width: 100vw;
     height: 100vh;
+    background-color: black;
     background-image: url(../pictures/background-img.jpg);
     background-position: center center;
     background-size: cover;
@@ -17,15 +18,29 @@ body, html {
 
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-color: rgba(0, 0, 0, 0.818);
     padding: 10px;
     height: 100px;
 }
 
 header > img {
+    display: none;
+}
+
+header > #menu {
+    font-size: 30px;
+    color: #fff;
+}
+
+header > #menu:hover {
+    color: #8E2980;
+    transition: 0.3s;
+}
+
+nav {
     display: none;
 }
 
@@ -44,6 +59,12 @@ nav > ul > a {
     border: 1px solid #fff;
     color: #fff;
     padding: 5px;
+}
+
+nav > ul > a:hover {
+    background-color: #8E2980;
+    color: black;
+    transition: 0.3s;
 }
 
 main {
@@ -86,8 +107,20 @@ div#doisp > #html {
     padding: 5px;
 }
 
+div#doisp > #html:hover {
+    background-color: black;
+    color: #fff;
+    transition: 0.3s;
+}
+
 div#doisp > #css {
     border: 2px solid #fff;
     color: #fff;
     padding: 5px;
+}
+
+div#doisp > #css:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.3s;
 }
